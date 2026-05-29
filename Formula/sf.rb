@@ -3,7 +3,7 @@ class Sf < Formula
   homepage "https://signal-foundry.app"
   url "https://github.com/nexaflow-io/signal-foundry-cli-releases/releases/download/cli-v0.3.14/signal-foundry-cli-0.3.14.tar.gz"
   sha256 "26e89723d6dcf9f41c9c18cc0e23fb16d8fbb779a0b213b445d949d1f4b48699"
-  license "LicenseRef-Signal-Foundry"
+  license :cannot_represent
 
   depends_on "node@22"
 
