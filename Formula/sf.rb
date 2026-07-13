@@ -1,8 +1,8 @@
 class Sf < Formula
   desc "Agent-first CLI for the Signal Foundry data workspace"
   homepage "https://signal-foundry.app"
-  url "https://github.com/nexaflow-io/signal-foundry-cli-releases/releases/download/cli-v0.3.37/signal-foundry-cli-0.3.37.tar.gz"
-  sha256 "9fdf06be466122b704dbfa9efe8e9670c50cc8a36f34bdc5eb5a954728c500fd"
+  url "https://github.com/nexaflow-io/signal-foundry-cli-releases/releases/download/cli-v0.3.38/signal-foundry-cli-0.3.38.tar.gz"
+  sha256 "9eb476580fb1f38d996b61f30aae0c03ba05918363f83b5536e08400b89c0f11"
   license :cannot_represent
 
   depends_on "node@22"
@@ -17,7 +17,7 @@ class Sf < Formula
   end
 
   test do
-    assert_match "0.3.37", shell_output("#{bin}/sf version")
+    assert_match "0.3.38", shell_output("#{bin}/sf version")
     assert_match "effectiveBaseUrl", shell_output("#{bin}/sf auth show --json")
   end
 end
